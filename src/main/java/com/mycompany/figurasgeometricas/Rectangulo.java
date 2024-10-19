@@ -8,6 +8,40 @@ package com.mycompany.figurasgeometricas;
  *
  * @author Steven xd
  */
-public class Rectangulo {
-    
+public class Rectangulo extends FiguraGeometrica {
+
+    private double ladoAncho;
+    private double ladoLongitud;
+
+    public Rectangulo(String nombre, String color) {
+        super(nombre, color);
+        this.ladoLongitud = ladoLongitud;
+        this.ladoAncho = ladoAncho;
+    }
+
+    @Override
+    public double obtenerArea() {
+        return ladoLongitud * ladoAncho;
+    }
+
+    @Override
+    public double obtenerPerimetro() {
+        return 2 * (ladoLongitud + ladoAncho);
+    }
+
+    public double getLadoAncho() {
+        return ladoAncho;
+    }
+
+    public void setLadoAncho(double ladoAncho) {
+        this.ladoAncho = ladoAncho;
+    }
+
+    public double getLadoLongitud() {
+        return ladoLongitud;
+    }
+
+    public void setLadoLongitud(double ladoLongitud) {
+        this.ladoLongitud = ladoLongitud;
+    }
 }
