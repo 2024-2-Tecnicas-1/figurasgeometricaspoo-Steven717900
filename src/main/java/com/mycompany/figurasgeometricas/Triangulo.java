@@ -10,32 +10,28 @@ package com.mycompany.figurasgeometricas;
  */
 public class Triangulo extends FiguraGeometrica {
 
-    private double base;
-    private double altura;
+    private double lado;
 
-    public Triangulo(String nombre, String color) {
+    public Triangulo(String nombre, String color, double lado) {
         super(nombre, color);
-        this.base = base;
-        this.altura = altura;
+        this.lado = lado;
     }
+
     @Override
     public double obtenerArea() {
-        return 0.5 * base * altura;
+        return 0.433 * lado * lado;
     }
+
     @Override
     public double obtenerPerimetro() {
-        return 3 * base;
+        return 3 * lado;
     }
-    public double getBase() {
-        return base;
+
+    public double getLado() {
+        return lado;
     }
-    public void setBase(double base) {
-        this.base = base;
-    }
-    public double getAltura() {
-        return altura;
-    }
-    public void setAltura(double altura) {
-        this.altura = altura;
+
+    public void setLado(double lado) {
+        this.lado = lado;
     }
 }
