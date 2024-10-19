@@ -10,17 +10,17 @@ package com.mycompany.figurasgeometricas;
  */
 public class Circulo extends FiguraGeometrica {
     private double radio;
-    public Circulo(String nombre, String color) {
+    public Circulo(String nombre, String color, double radio) {
         super(nombre, color);
         this.radio = radio;
     }
     @Override
     public double obtenerArea() {
-        return 2 * 3.1456 * radio * radio;
+        return 3.1415926 * radio * radio;
     }
     @Override
     public double obtenerPerimetro() {
-        return 2 * 3.1456 * radio;
+        return 2 * 3.1415926 * radio;
     }
     public double getRadio() {
         return radio;
